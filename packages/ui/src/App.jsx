@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux'
 
-import { ThemeProvider } from '@mui/material/styles'
+import { ThemeProvider } from '@mui/material'
 import { CssBaseline, StyledEngineProvider } from '@mui/material'
 
 // routing

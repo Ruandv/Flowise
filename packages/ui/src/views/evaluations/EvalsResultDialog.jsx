@@ -19,7 +19,7 @@ import {
     Button,
     TableCell
 } from '@mui/material'
-import { useTheme } from '@mui/material/styles'
+import { useTheme } from '@mui/material'
 import { IconVectorBezier2, IconMinimize } from '@tabler/icons-react'
 import LLMIcon from '@mui/icons-material/ModelTraining'
 import AlarmIcon from '@mui/icons-material/AlarmOn'

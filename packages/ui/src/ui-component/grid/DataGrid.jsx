@@ -6,7 +6,7 @@ import { Button } from '@mui/material'
 import DeleteIcon from '@mui/icons-material/Delete'
 import { cloneDeep } from 'lodash'
 import { formatDataGridRows } from '@/utils/genericHelper'
-import { styled } from '@mui/material/styles'
+import { styled } from '@mui/material'
 
 const StyledDataGrid = styled(MUIDataGrid)(({ theme }) => ({
     border: `1px solid ${theme.palette.mode === 'light' ? '#b4b4b4' : '#303030'}`,

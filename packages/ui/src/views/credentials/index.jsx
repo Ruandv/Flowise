@@ -4,7 +4,7 @@ import { enqueueSnackbar as enqueueSnackbarAction, closeSnackbar as closeSnackba
 import moment from 'moment'
 
 // material-ui
-import { styled } from '@mui/material/styles'
+import { styled } from '@mui/material'
 import { tableCellClasses } from '@mui/material/TableCell'
 import {
     Button,

@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Outlet } from 'react-router-dom'
 
 // material-ui
-import { styled, useTheme } from '@mui/material/styles'
+import { styled, useTheme } from '@mui/material'
 import { AppBar, Box, CssBaseline, Toolbar, useMediaQuery } from '@mui/material'
 
 // project imports
@@ -56,7 +56,7 @@ const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(({
 
 // ==============================|| MAIN LAYOUT ||============================== //
 
-const MainLayout = () => {
+const MainLayout = ({ navigateTo }) => {
     const theme = useTheme()
     const matchDownMd = useMediaQuery(theme.breakpoints.down('lg'))
 
@@ -76,7 +76,7 @@ const MainLayout = () => {
         <Box sx={{ display: 'flex' }}>
             <CssBaseline />
             {/* header */}
-            <AppBar
+            {/* <AppBar
                 enableColorOnDark
                 position='fixed'
                 color='inherit'
@@ -85,11 +85,18 @@ const MainLayout = () => {
                     bgcolor: theme.palette.background.default,
                     transition: leftDrawerOpened ? theme.transitions.create('width') : 'none'
                 }}
+            >  */}
+            <Toolbar
+                sx={{
+                    height: `${headerHeight}px`,
+                    'min-width': '100%',
+                    borderBottom: '1px solid',
+                    borderColor: theme.palette.grey[900] + 25
+                }}
             >
-                <Toolbar sx={{ height: `${headerHeight}px`, borderBottom: '1px solid', borderColor: theme.palette.grey[900] + 25 }}>
-                    <Header handleLeftDrawerToggle={handleLeftDrawerToggle} />
-                </Toolbar>
-            </AppBar>
+                <Header handleLeftDrawerToggle={handleLeftDrawerToggle} navigateTo={navigateTo} />
+            </Toolbar>
+            {/* </AppBar> */}
 
             {/* drawer */}
             <Sidebar drawerOpen={leftDrawerOpened} drawerToggle={handleLeftDrawerToggle} />

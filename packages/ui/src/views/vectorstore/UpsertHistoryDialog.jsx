@@ -30,7 +30,7 @@ import {
     AccordionDetails,
     Checkbox
 } from '@mui/material'
-import { useTheme } from '@mui/material/styles'
+import { useTheme } from '@mui/material'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import { IconChevronsUp, IconChevronsDown, IconTrash, IconX } from '@tabler/icons-react'
 

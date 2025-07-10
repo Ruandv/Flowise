@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from 'react'
 
 // material-ui
 import { Box, Stack, ButtonGroup, Skeleton, ToggleButtonGroup, ToggleButton } from '@mui/material'
-import { useTheme } from '@mui/material/styles'
+import { useTheme } from '@mui/material'
 
 // project imports
 import MainCard from '@/ui-component/cards/MainCard'

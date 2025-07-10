@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 
 // material-ui
 import { Chip, Box, Skeleton, Stack, ToggleButton, ToggleButtonGroup } from '@mui/material'
-import { useTheme } from '@mui/material/styles'
+import { useTheme } from '@mui/material'
 
 // project imports
 import MainCard from '@/ui-component/cards/MainCard'

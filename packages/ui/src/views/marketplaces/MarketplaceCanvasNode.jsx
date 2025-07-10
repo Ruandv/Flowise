@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import { useState } from 'react'
 
 // material-ui
-import { styled, useTheme } from '@mui/material/styles'
+import { styled, useTheme } from '@mui/material'
 import { Box, Typography, Divider, Button } from '@mui/material'
 
 // project imports

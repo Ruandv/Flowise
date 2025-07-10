@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import PropTypes from 'prop-types'
 
-import { styled, alpha } from '@mui/material/styles'
+import { styled, alpha } from '@mui/material'
 import Menu from '@mui/material/Menu'
 import { PermissionMenuItem } from '@/ui-component/button/RBACButtons'
 import EditIcon from '@mui/icons-material/Edit'

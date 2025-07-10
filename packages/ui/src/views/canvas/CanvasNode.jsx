@@ -3,7 +3,7 @@ import { useContext, useState, useEffect, memo } from 'react'
 import { useSelector } from 'react-redux'
 
 // material-ui
-import { useTheme } from '@mui/material/styles'
+import { useTheme } from '@mui/material'
 import { IconButton, Box, Typography, Divider, Button } from '@mui/material'
 import Tooltip from '@mui/material/Tooltip'
 

@@ -24,7 +24,7 @@ import {
     FormControlLabel,
     Checkbox
 } from '@mui/material'
-import { useTheme } from '@mui/material/styles'
+import { useTheme } from '@mui/material'
 
 // Project imports
 import { StyledButton } from '@/ui-component/button/StyledButton'

@@ -18,7 +18,7 @@ import {
     ToggleButtonGroup,
     Typography
 } from '@mui/material'
-import { useTheme } from '@mui/material/styles'
+import { useTheme } from '@mui/material'
 
 // project imports
 import MainCard from '@/ui-component/cards/MainCard'

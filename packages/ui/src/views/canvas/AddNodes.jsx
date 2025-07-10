@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import PropTypes from 'prop-types'
 
 // material-ui
-import { useTheme } from '@mui/material/styles'
+import { useTheme } from '@mui/material'
 import {
     Accordion,
     AccordionSummary,
@@ -529,7 +529,7 @@ const AddNodes = ({ nodesData, node, isAgentCanvas, isAgentflowv2, onFlowGenerat
                                                                                 background:
                                                                                     category.split(';')[1] === 'DEPRECATING'
                                                                                         ? theme.palette.warning.main
-                                                                                        : theme.palette.teal.main,
+                                                                                        : theme.palette.warning.main,
                                                                                 color:
                                                                                     category.split(';')[1] !== 'DEPRECATING'
                                                                                         ? 'white'
@@ -618,7 +618,7 @@ const AddNodes = ({ nodesData, node, isAgentCanvas, isAgentflowv2, onFlowGenerat
                                                                                                                 node.badge === 'DEPRECATING'
                                                                                                                     ? theme.palette.warning
                                                                                                                           .main
-                                                                                                                    : theme.palette.teal
+                                                                                                                    : theme.palette.info
                                                                                                                           .main,
                                                                                                             color:
                                                                                                                 node.badge !== 'DEPRECATING'

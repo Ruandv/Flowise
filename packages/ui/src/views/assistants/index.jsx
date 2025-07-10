@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux'
 
 // material-ui
 import { Card, CardContent, Stack } from '@mui/material'
-import { useTheme, styled } from '@mui/material/styles'
+import { useTheme, styled } from '@mui/material'
 
 // project imports
 import MainCard from '@/ui-component/cards/MainCard'

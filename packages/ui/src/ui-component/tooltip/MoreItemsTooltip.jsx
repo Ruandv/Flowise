@@ -1,5 +1,5 @@
 import { Tooltip, Typography } from '@mui/material'
-import { styled } from '@mui/material/styles'
+import { styled } from '@mui/material'
 import PropTypes from 'prop-types'
 
 const StyledOl = styled('ol')(() => ({

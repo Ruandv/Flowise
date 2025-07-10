@@ -20,7 +20,7 @@ import {
 } from '@mui/material'
 import { CopyBlock, atomOneDark } from 'react-code-blocks'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
-import { useTheme } from '@mui/material/styles'
+import { useTheme } from '@mui/material'
 import { useAuth } from '@/hooks/useAuth'
 
 // Project import

@@ -22,7 +22,7 @@ import {
     Button,
     Skeleton
 } from '@mui/material'
-import { alpha, styled, useTheme } from '@mui/material/styles'
+import { alpha, styled, useTheme } from '@mui/material'
 import { tableCellClasses } from '@mui/material/TableCell'
 
 // project imports

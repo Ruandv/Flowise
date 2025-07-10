@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux'
 // material-ui
 import { IconButton, Button, Box, Typography } from '@mui/material'
 import { IconArrowsMaximize, IconBulb, IconX } from '@tabler/icons-react'
-import { useTheme } from '@mui/material/styles'
+import { useTheme } from '@mui/material'
 
 // Project import
 import { StyledButton } from '@/ui-component/button/StyledButton'

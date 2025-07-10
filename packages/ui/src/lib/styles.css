@@ -1,0 +1,59 @@
+/* FlowiseCanvas Library Styles */
+@import '../views/agentflowsv2/index.css';
+@import 'reactflow/dist/style.css';
+
+/* Additional library-specific styles */
+.flowise-canvas {
+    width: 100%;
+    height: 100%;
+}
+
+.flowise-canvas .reactflow-parent-wrapper {
+    display: flex;
+    flex-grow: 1;
+    height: 100%;
+}
+
+.flowise-canvas .reactflow-parent-wrapper .reactflow-wrapper {
+    flex-grow: 1;
+    height: 100%;
+}
+
+/* Ensure dark mode controls work in library context */
+.flowise-canvas .dark-mode-controls {
+    --xy-controls-button-background-color-default: #2d2d2d;
+    --xy-controls-button-background-color-hover-default: #404040;
+    --xy-controls-button-border-color-default: #525252;
+    --xy-controls-box-shadow-default: 0 0 2px 1px rgba(255, 255, 255, 0.1);
+}
+
+.flowise-canvas .dark-mode-controls .react-flow__controls-button {
+    background-color: #2d2d2d;
+    border-color: #525252;
+    color: #ffffff;
+    border: 1px solid #525252;
+}
+
+.flowise-canvas .dark-mode-controls .react-flow__controls-button:hover {
+    background-color: #404040;
+}
+
+.flowise-canvas .dark-mode-controls .react-flow__controls-button.react-flow__controls-interactive {
+    background-color: #2d2d2d;
+    border-color: #525252;
+    color: #ffffff;
+}
+
+.flowise-canvas .dark-mode-controls .react-flow__controls-button.react-flow__controls-interactive:hover {
+    background-color: #404040;
+}
+
+.flowise-canvas .dark-mode-controls .react-flow__controls-button svg {
+    color: #ffffff;
+    fill: #ffffff;
+}
+
+.flowise-canvas .dark-mode-controls .react-flow__controls-button:hover svg {
+    color: #ffffff;
+    fill: #ffffff;
+}

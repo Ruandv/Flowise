@@ -22,7 +22,7 @@ import {
     Skeleton,
     TableCell
 } from '@mui/material'
-import { useTheme } from '@mui/material/styles'
+import { useTheme } from '@mui/material'
 import moment from 'moment'
 import PaidIcon from '@mui/icons-material/Paid'
 import { IconHierarchy, IconUsersGroup, IconRobot } from '@tabler/icons-react'

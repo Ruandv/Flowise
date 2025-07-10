@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 // material-ui
-import { useTheme } from '@mui/material/styles'
+import { useTheme } from '@mui/material'
 import { Box, Card, Divider, Grid, Typography } from '@mui/material'
 import MuiBreadcrumbs from '@mui/material/Breadcrumbs'
 

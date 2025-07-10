@@ -25,7 +25,7 @@ import {
     DialogActions,
     TextField
 } from '@mui/material'
-import { darken, useTheme } from '@mui/material/styles'
+import { darken, useTheme } from '@mui/material'
 import {
     IconCircleDot,
     IconDownload,
@@ -1882,7 +1882,6 @@ const ChatMessage = ({ open, chatflowid, isAgentCanvas, isDialog, previews, setP
                                                         removeDuplicateURL={removeDuplicateURL}
                                                         isValidURL={isValidURL}
                                                         onURLClick={onURLClick}
-                                                        getLabel={getLabel}
                                                     />
                                                 ))}
                                             </div>

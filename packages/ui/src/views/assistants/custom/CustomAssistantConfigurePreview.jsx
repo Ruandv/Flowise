@@ -11,7 +11,7 @@ import useConfirm from '@/hooks/useConfirm'
 
 // Material-UI
 import { IconButton, Avatar, ButtonBase, Toolbar, Box, Button, Grid, OutlinedInput, Stack, Typography } from '@mui/material'
-import { useTheme } from '@mui/material/styles'
+import { useTheme } from '@mui/material'
 import {
     IconCode,
     IconArrowLeft,

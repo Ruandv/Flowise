@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux'
 
 import { Popper, FormControl, TextField, Box, Typography } from '@mui/material'
 import Autocomplete, { autocompleteClasses } from '@mui/material/Autocomplete'
-import { useTheme, styled } from '@mui/material/styles'
+import { useTheme, styled } from '@mui/material'
 import PropTypes from 'prop-types'
 
 const StyledPopper = styled(Popper)({
