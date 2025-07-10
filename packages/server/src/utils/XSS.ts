@@ -33,7 +33,8 @@ export function getCorsOptions(): any {
             } else {
                 callback(null, false)
             }
-        }
+        },
+        credentials: true // Allow credentials (cookies, authorization headers, etc.)
     }
     return corsOptions
 }
