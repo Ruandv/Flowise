@@ -1,6 +1,5 @@
 // Main library exports
-export { default as FlowiseCanvas } from './FlowiseCanvas'
+// export { default as FlowiseCanvas } from './FlowiseCanvas'
 export { FlowiseProvider } from './FlowiseProvider'
-
-// For backward compatibility
-export { default as AgentflowCanvas } from '../views/agentflowsv2/Canvas'
+export { default as AgentFlows } from '../views/agentflows'
+export { default as FlowiseCanvas } from '../views/agentflowsv2/Canvas'

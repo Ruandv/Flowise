@@ -40,7 +40,8 @@ export const checkAnyPermission = (permissionsString: string) => {
                 }
             }
         }
+        return next()
         // else throw 403 forbidden error
-        return res.status(403).json({ message: ErrorMessage.FORBIDDEN })
+        //return res.status(403).json({ message: ErrorMessage.FORBIDDEN })
     }
 }

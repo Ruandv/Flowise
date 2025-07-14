@@ -49,34 +49,27 @@ export const FlowiseProvider = ({ children, navigateTo, initialPath = '/' }) => 
                     <ConfigProvider>
                         <ErrorProvider navigateTo={navigateTo}>
                             <MemoryRouter initialEntries={[initialPath]}>
-                                <Routes>
-                                    {/* Default route */}
-                                    <Route path='/' element={<ConfirmContextProvider>{children}</ConfirmContextProvider>} />
+                                <ConfirmContextProvider>
+                                    <Routes>
+                                        {/* Default route */}
+                                        <Route path='/' element={children} />
 
-                                    {/* Create routes for all paths based on API structure */}
-                                    {availableRoutes.map(
-                                        (path) =>
-                                            path !== '/' && (
-                                                <Route
-                                                    key={path}
-                                                    path={path}
-                                                    element={<ConfirmContextProvider>{children}</ConfirmContextProvider>}
-                                                />
-                                            )
-                                    )}
+                                        {/* Create routes for all paths based on API structure */}
+                                        {availableRoutes.map((path) => path !== '/' && <Route key={path} path={path} element={children} />)}
 
-                                    {/* Add nested routes for item details */}
-                                    <Route path='/chatflows/:id' element={<ConfirmContextProvider>{children}</ConfirmContextProvider>} />
-                                    <Route path='/agentflows/:id' element={<ConfirmContextProvider>{children}</ConfirmContextProvider>} />
-                                    <Route path='/evaluations/:id' element={<ConfirmContextProvider>{children}</ConfirmContextProvider>} />
-                                    <Route path='/docstore/:id' element={<ConfirmContextProvider>{children}</ConfirmContextProvider>} />
-                                    <Route path='/tools/:id' element={<ConfirmContextProvider>{children}</ConfirmContextProvider>} />
-                                    <Route path='/credentials/:id' element={<ConfirmContextProvider>{children}</ConfirmContextProvider>} />
-                                    <Route path='/datasets/:id' element={<ConfirmContextProvider>{children}</ConfirmContextProvider>} />
+                                        {/* Add nested routes for item details */}
+                                        <Route path='/chatflows/:id' element={children} />
+                                        <Route path='/agentflows/:id' element={children} />
+                                        <Route path='/evaluations/:id' element={children} />
+                                        <Route path='/docstore/:id' element={children} />
+                                        <Route path='/tools/:id' element={children} />
+                                        <Route path='/credentials/:id' element={children} />
+                                        <Route path='/datasets/:id' element={children} />
 
-                                    {/* Catch-all route */}
-                                    <Route path='*' element={<ConfirmContextProvider>{children}</ConfirmContextProvider>} />
-                                </Routes>
+                                        {/* Catch-all route */}
+                                        <Route path='*' element={children} />
+                                    </Routes>
+                                </ConfirmContextProvider>
                             </MemoryRouter>
                         </ErrorProvider>
                     </ConfigProvider>
