@@ -33,7 +33,7 @@ import MuiAccordionDetails from '@mui/material/AccordionDetails'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp'
 import ClearIcon from '@mui/icons-material/Clear'
-import { styled } from '@mui/material/styles'
+import { styled } from '@mui/material'
 
 //Project Import
 import { StyledButton } from '@/ui-component/button/StyledButton'

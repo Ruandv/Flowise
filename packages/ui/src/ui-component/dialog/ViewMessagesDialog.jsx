@@ -26,7 +26,7 @@ import {
     Checkbox,
     DialogActions
 } from '@mui/material'
-import { useTheme } from '@mui/material/styles'
+import { useTheme } from '@mui/material'
 import DatePicker from 'react-datepicker'
 
 import robotPNG from '@/assets/images/robot.png'

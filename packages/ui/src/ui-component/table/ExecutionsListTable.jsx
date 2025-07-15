@@ -2,7 +2,7 @@ import { useState } from 'react'
 import PropTypes from 'prop-types'
 import { useSelector } from 'react-redux'
 import moment from 'moment'
-import { styled } from '@mui/material/styles'
+import { styled } from '@mui/material'
 import {
     Box,
     Paper,

@@ -1,5 +1,5 @@
 import { Alert, IconButton } from '@mui/material'
-import { useTheme } from '@mui/material/styles'
+import { useTheme } from '@mui/material'
 import PropTypes from 'prop-types'
 
 const ThumbsUpIcon = () => {

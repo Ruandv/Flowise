@@ -1,4 +1,4 @@
-import { styled } from '@mui/material/styles'
+import { styled } from '@mui/material'
 import { Button } from '@mui/material'
 import MuiToggleButton from '@mui/material/ToggleButton'
 

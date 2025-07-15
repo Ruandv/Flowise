@@ -5,7 +5,7 @@ import { store } from '@/store'
 
 // material-ui
 import { Divider, Box, Button, List, ListItemButton, ListItemIcon, Typography } from '@mui/material'
-import { useTheme } from '@mui/material/styles'
+import { useTheme } from '@mui/material'
 
 // project imports
 import useNotifier from '@/utils/useNotifier'

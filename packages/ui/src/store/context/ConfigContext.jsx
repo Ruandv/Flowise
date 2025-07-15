@@ -15,6 +15,18 @@ export const ConfigProvider = ({ children }) => {
         const userSettings = platformsettingsApi.getSettings()
         Promise.all([userSettings])
             .then(([currentSettingsData]) => {
+                // Check if the response exists and has the expected structure
+                if (!currentSettingsData || !currentSettingsData.data) {
+                    console.warn('Settings API returned invalid response:', currentSettingsData)
+                    // Set defaults for open source platform
+                    setConfig({ PLATFORM_TYPE: 'opensource' })
+                    setOpenSource(true)
+                    setEnterpriseLicensed(false)
+                    setCloudLicensed(false)
+                    setLoading(false)
+                    return
+                }
+
                 const finalData = {
                     ...currentSettingsData.data
                 }
@@ -33,12 +45,22 @@ export const ConfigProvider = ({ children }) => {
                         setEnterpriseLicensed(false)
                         setCloudLicensed(false)
                     }
+                } else {
+                    // Default to open source if no platform type
+                    setOpenSource(true)
+                    setEnterpriseLicensed(false)
+                    setCloudLicensed(false)
                 }
 
                 setLoading(false)
             })
             .catch((error) => {
                 console.error('Error fetching data:', error)
+                // Set defaults on error
+                setConfig({ PLATFORM_TYPE: 'opensource' })
+                setOpenSource(true)
+                setEnterpriseLicensed(false)
+                setCloudLicensed(false)
                 setLoading(false)
             })
     }, [])

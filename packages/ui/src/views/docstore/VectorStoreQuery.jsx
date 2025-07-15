@@ -8,7 +8,7 @@ import { v4 as uuidv4 } from 'uuid'
 // material-ui
 import { Box, Card, Grid, Stack, Typography, OutlinedInput, IconButton, Button } from '@mui/material'
 import Embeddings from '@mui/icons-material/DynamicFeed'
-import { useTheme, styled } from '@mui/material/styles'
+import { useTheme, styled } from '@mui/material'
 import CardContent from '@mui/material/CardContent'
 import chunks_emptySVG from '@/assets/images/chunks_empty.svg'
 import { IconSearch, IconFileStack, IconDeviceFloppy, IconX } from '@tabler/icons-react'

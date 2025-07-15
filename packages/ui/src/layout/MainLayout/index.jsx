@@ -1,9 +1,9 @@
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { Outlet } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 
 // material-ui
-import { styled, useTheme } from '@mui/material/styles'
+import { styled, useTheme } from '@mui/material'
 import { AppBar, Box, CssBaseline, Toolbar, useMediaQuery } from '@mui/material'
 
 // project imports
@@ -11,6 +11,9 @@ import Header from './Header'
 import Sidebar from './Sidebar'
 import { drawerWidth, headerHeight } from '@/store/constant'
 import { SET_MENU } from '@/store/actions'
+
+// View imports
+import AgentFlows from '@/views/agentflows'
 
 // styles
 const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(({ theme, open }) => ({
@@ -56,7 +59,7 @@ const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(({
 
 // ==============================|| MAIN LAYOUT ||============================== //
 
-const MainLayout = () => {
+const MainLayout = ({ navigateTo }) => {
     const theme = useTheme()
     const matchDownMd = useMediaQuery(theme.breakpoints.down('lg'))
 
@@ -76,7 +79,7 @@ const MainLayout = () => {
         <Box sx={{ display: 'flex' }}>
             <CssBaseline />
             {/* header */}
-            <AppBar
+            {/* <AppBar
                 enableColorOnDark
                 position='fixed'
                 color='inherit'
@@ -85,18 +88,38 @@ const MainLayout = () => {
                     bgcolor: theme.palette.background.default,
                     transition: leftDrawerOpened ? theme.transitions.create('width') : 'none'
                 }}
+            >  */}
+            <Toolbar
+                sx={{
+                    height: `${headerHeight}px`,
+                    'min-width': '100%',
+                    borderBottom: '1px solid',
+                    borderColor: theme.palette.grey[900] + 25
+                }}
             >
-                <Toolbar sx={{ height: `${headerHeight}px`, borderBottom: '1px solid', borderColor: theme.palette.grey[900] + 25 }}>
-                    <Header handleLeftDrawerToggle={handleLeftDrawerToggle} />
-                </Toolbar>
-            </AppBar>
+                <Header handleLeftDrawerToggle={handleLeftDrawerToggle} navigateTo={navigateTo} />
+            </Toolbar>
+            {/* </AppBar> */}
 
             {/* drawer */}
             <Sidebar drawerOpen={leftDrawerOpened} drawerToggle={handleLeftDrawerToggle} />
 
             {/* main content */}
             <Main theme={theme} open={leftDrawerOpened}>
-                <Outlet />
+                <Routes>
+                    {/* <Route path="/" element={<AgentFlows navigateTo={navigateTo} />} /> */}
+                    <Route path='/agentflows' element={<AgentFlows navigateTo={navigateTo} />} />
+                    <Route path='chatflows/*' element={<div>ChatFlows Component NO SLASH</div>} />
+                    <Route path='/chatflows/*' element={<div>sss ChatFlows Component NO SLASH</div>} />
+                    <Route path='/chatflows' element={<div>ChatFlows Component</div>} />
+                    <Route path='/tools' element={<div>Tools Component</div>} />
+                    <Route path='/credentials' element={<div>Credentials Component</div>} />
+                    <Route path='/variables' element={<div>Variables Component</div>} />
+                    <Route path='/marketplaces' element={<div>Marketplaces Component</div>} />
+                    <Route path='/apikey' element={<div>API Key Component</div>} />
+                    <Route path='/assistants' element={<div>Assistants Component</div>} />
+                    <Route path='/executions' element={<div>Executions Component</div>} />
+                </Routes>
             </Main>
         </Box>
     )

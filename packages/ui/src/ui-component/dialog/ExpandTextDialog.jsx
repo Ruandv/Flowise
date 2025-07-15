@@ -6,7 +6,7 @@ import PerfectScrollbar from 'react-perfect-scrollbar'
 
 // MUI
 import { Button, Dialog, DialogActions, DialogContent, Typography } from '@mui/material'
-import { useTheme } from '@mui/material/styles'
+import { useTheme } from '@mui/material'
 import { LoadingButton } from '@mui/lab'
 
 // Project Import

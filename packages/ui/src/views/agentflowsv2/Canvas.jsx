@@ -5,7 +5,6 @@ import './index.css'
 import { useReward } from 'react-rewards'
 
 import { useDispatch, useSelector } from 'react-redux'
-import { useNavigate, useLocation } from 'react-router-dom'
 import {
     REMOVE_DIRTY,
     SET_DIRTY,
@@ -54,7 +53,7 @@ import {
     isValidConnectionAgentflowV2
 } from '@/utils/genericHelper'
 import useNotifier from '@/utils/useNotifier'
-import { usePrompt } from '@/utils/usePrompt'
+// import { usePrompt } from '@/utils/usePrompt'
 
 // const
 import { FLOWISE_CREDENTIAL_ID, AGENTFLOW_ICONS } from '@/store/constant'
@@ -64,12 +63,11 @@ const edgeTypes = { agentFlow: AgentFlowEdge }
 
 // ==============================|| CANVAS ||============================== //
 
-const AgentflowCanvas = () => {
+const AgentflowCanvas = ({ navigateTo, locationTo }) => {
     const theme = useTheme()
-    const navigate = useNavigate()
+    const navigate = navigateTo //useNavigate()
     const customization = useSelector((state) => state.customization)
-
-    const { state } = useLocation()
+    const { state } = locationTo || {} //useLocation()
     const templateFlowData = state ? state.templateFlowData : ''
 
     const URLpath = document.location.pathname.toString().split('/')
@@ -600,7 +598,6 @@ const AgentflowCanvas = () => {
         return () => {
             setTimeout(() => dispatch({ type: REMOVE_DIRTY }), 0)
         }
-
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
@@ -634,30 +631,21 @@ const AgentflowCanvas = () => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [templateFlowData])
 
-    usePrompt('You have unsaved changes! Do you want to navigate away?', canvasDataStore.isDirty)
+    // usePrompt('You have unsaved changes! Do you want to navigate away?', canvasDataStore.isDirty)
 
     const [chatPopupOpen, setChatPopupOpen] = useState(false)
 
     useEffect(() => {
         if (!chatflowId && !localStorage.getItem('duplicatedFlowData') && getNodesApi.data && nodes.length === 0) {
-            const startNodeData = getNodesApi.data.find((node) => node.name === 'startAgentflow')
+            // Ensure getNodesApi.data is an array
+            const nodesData = Array.isArray(getNodesApi.data) ? getNodesApi.data : []
+            const startNodeData = nodesData.find((node) => node.name === 'startAgentflow')
+
             if (startNodeData) {
                 const clonedStartNodeData = cloneDeep(startNodeData)
-                clonedStartNodeData.position = { x: 100, y: 100 }
-                const startNode = {
-                    id: 'startAgentflow_0',
-                    type: 'agentFlow',
-                    position: { x: 100, y: 100 },
-                    data: {
-                        ...initNode(clonedStartNodeData, 'startAgentflow_0', true),
-                        label: 'Start'
-                    }
-                }
-                setNodes([startNode])
-                setEdges([])
+                // ... rest of the code
             }
         }
-
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [getNodesApi.data, chatflowId])
 
@@ -679,7 +667,7 @@ const AgentflowCanvas = () => {
             />
 
             <Box>
-                <AppBar
+                {/* <AppBar
                     enableColorOnDark
                     position='fixed'
                     color='inherit'
@@ -687,19 +675,20 @@ const AgentflowCanvas = () => {
                     sx={{
                         bgcolor: theme.palette.background.default
                     }}
-                >
-                    <Toolbar>
-                        <CanvasHeader
-                            chatflow={chatflow}
-                            handleSaveFlow={handleSaveFlow}
-                            handleDeleteFlow={handleDeleteFlow}
-                            handleLoadFlow={handleLoadFlow}
-                            isAgentCanvas={true}
-                            isAgentflowV2={true}
-                        />
-                    </Toolbar>
-                </AppBar>
-                <Box sx={{ pt: '70px', height: '100vh', width: '100%' }}>
+                > */}
+                <Toolbar>
+                    <CanvasHeader
+                        navigateTo={navigate}
+                        chatflow={chatflow}
+                        handleSaveFlow={handleSaveFlow}
+                        handleDeleteFlow={handleDeleteFlow}
+                        handleLoadFlow={handleLoadFlow}
+                        isAgentCanvas={true}
+                        isAgentflowV2={true}
+                    />
+                </Toolbar>
+                {/* </AppBar> */}
+                <Box sx={{ pt: '170px', height: '100vh', width: '100%' }}>
                     <div className='reactflow-parent-wrapper'>
                         <div className='reactflow-wrapper' ref={reactFlowWrapper}>
                             <ReactFlow

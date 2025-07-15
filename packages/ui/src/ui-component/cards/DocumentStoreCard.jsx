@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import { useSelector } from 'react-redux'
 
 // material-ui
-import { styled } from '@mui/material/styles'
+import { styled } from '@mui/material'
 import { Box, Grid, Typography, useTheme } from '@mui/material'
 import { IconVectorBezier2, IconLanguage, IconScissors } from '@tabler/icons-react'
 

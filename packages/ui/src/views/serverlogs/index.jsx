@@ -12,7 +12,7 @@ import { sublime } from '@uiw/codemirror-theme-sublime'
 
 // material-ui
 import { Box, Skeleton, Stack, Select, MenuItem, ListItemButton } from '@mui/material'
-import { useTheme } from '@mui/material/styles'
+import { useTheme } from '@mui/material'
 
 // ui
 import ViewHeader from '@/layout/MainLayout/ViewHeader'

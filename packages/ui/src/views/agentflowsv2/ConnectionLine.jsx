@@ -2,7 +2,7 @@ import { memo } from 'react'
 import { EdgeLabelRenderer, useStore, getBezierPath } from 'reactflow'
 import PropTypes from 'prop-types'
 import { AGENTFLOW_ICONS } from '@/store/constant'
-import { useTheme } from '@mui/material/styles'
+import { useTheme } from '@mui/material'
 
 function EdgeLabel({ transform, isHumanInput, label, color }) {
     return (

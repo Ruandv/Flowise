@@ -6,7 +6,7 @@ import PerfectScrollbar from 'react-perfect-scrollbar'
 
 // MUI
 import { Button, Dialog, DialogActions, DialogContent, Typography, Box } from '@mui/material'
-import { styled } from '@mui/material/styles'
+import { styled } from '@mui/material'
 
 // Project Import
 import { StyledButton } from '@/ui-component/button/StyledButton'

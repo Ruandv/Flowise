@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types'
 import { useSelector, useDispatch } from 'react-redux'
 import { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+//import { useNavigate } from 'react-router-dom'
 
 // material-ui
 import { Button, Avatar, Box, ButtonBase, Switch, Typography, Link } from '@mui/material'
-import { useTheme, styled, darken } from '@mui/material/styles'
+import { useTheme, styled, darken } from '@mui/material'
 
 // project imports
 import LogoSection from '../LogoSection'
@@ -142,9 +142,9 @@ GitHubStarButton.propTypes = {
     isDark: PropTypes.bool.isRequired
 }
 
-const Header = ({ handleLeftDrawerToggle }) => {
+const Header = ({ handleLeftDrawerToggle, navigateTo }) => {
     const theme = useTheme()
-    const navigate = useNavigate()
+    const navigate = navigateTo // useNavigate()
 
     const customization = useSelector((state) => state.customization)
     const logoutApi = useApi(accountApi.logout)

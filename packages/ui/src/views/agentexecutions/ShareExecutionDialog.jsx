@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from 'react-redux'
 
 // Material
 import { Typography, Box, Dialog, DialogContent, DialogTitle, Button, Tooltip } from '@mui/material'
-import { useTheme } from '@mui/material/styles'
+import { useTheme } from '@mui/material'
 import { IconCopy, IconX, IconLink } from '@tabler/icons-react'
 
 // Constants

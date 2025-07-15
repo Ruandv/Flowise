@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import { useSelector } from 'react-redux'
 
 // material-ui
-import { useTheme } from '@mui/material/styles'
+import { useTheme } from '@mui/material'
 import { Box, Drawer, useMediaQuery } from '@mui/material'
 
 // third-party
@@ -40,7 +40,7 @@ const Sidebar = ({ drawerOpen, drawerToggle, window }) => {
                 <PerfectScrollbar
                     component='div'
                     style={{
-                        height: !matchUpMd ? 'calc(100vh - 56px)' : `calc(100vh - ${headerHeight}px)`,
+                        height: !matchUpMd ? 'calc(100vh - 56px)' : `calc(100vh - ${140 + headerHeight}px)`,
                         display: 'flex',
                         flexDirection: 'column'
                     }}
@@ -82,7 +82,7 @@ const Sidebar = ({ drawerOpen, drawerToggle, window }) => {
                             background: theme.palette.background.default,
                             color: theme.palette.text.primary,
                             [theme.breakpoints.up('md')]: {
-                                top: `${headerHeight}px`
+                                top: `${140 + headerHeight}px`
                             },
                             borderRight: drawerOpen ? '1px solid' : 'none',
                             borderColor: drawerOpen ? theme.palette.grey[900] + 25 : 'transparent'

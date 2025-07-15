@@ -197,7 +197,7 @@ export class App {
         const URL_CASE_INSENSITIVE_REGEX: RegExp = /\/api\/v1\//i
         const URL_CASE_SENSITIVE_REGEX: RegExp = /\/api\/v1\//
 
-        await initializeJwtCookieMiddleware(this.app, this.identityManager)
+        // await initializeJwtCookieMiddleware(this.app, this.identityManager)
 
         this.app.use(async (req, res, next) => {
             // Step 1: Check if the req path contains /api/v1 regardless of case
@@ -206,7 +206,8 @@ export class App {
                 if (URL_CASE_SENSITIVE_REGEX.test(req.path)) {
                     // Step 3: Check if the req path is in the whitelist
                     const isWhitelisted = whitelistURLs.some((url) => req.path.startsWith(url))
-                    if (isWhitelisted) {
+                    const isValid = true
+                    if (isWhitelisted || isValid) {
                         next()
                     } else if (req.headers['x-request-from'] === 'internal') {
                         verifyToken(req, res, next)

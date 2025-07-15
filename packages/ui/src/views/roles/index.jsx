@@ -5,7 +5,7 @@ import { enqueueSnackbar as enqueueSnackbarAction, closeSnackbar as closeSnackba
 import * as PropTypes from 'prop-types'
 
 // material-ui
-import { styled } from '@mui/material/styles'
+import { styled } from '@mui/material'
 import { tableCellClasses } from '@mui/material/TableCell'
 import {
     Box,

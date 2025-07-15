@@ -23,7 +23,7 @@ import {
     Typography
 } from '@mui/material'
 import TableCell, { tableCellClasses } from '@mui/material/TableCell'
-import { useTheme, styled } from '@mui/material/styles'
+import { useTheme, styled } from '@mui/material'
 
 // project imports
 import MainCard from '@/ui-component/cards/MainCard'

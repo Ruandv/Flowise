@@ -1,4 +1,4 @@
-import { styled } from '@mui/material/styles'
+import { styled } from '@mui/material'
 import ButtonBase from '@mui/material/ButtonBase'
 
 export const ImageButton = styled(ButtonBase)(({ theme }) => ({

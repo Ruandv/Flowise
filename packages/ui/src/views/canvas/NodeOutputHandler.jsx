@@ -3,7 +3,7 @@ import { Handle, Position, useUpdateNodeInternals } from 'reactflow'
 import { useEffect, useRef, useState, useContext } from 'react'
 
 // material-ui
-import { useTheme, styled } from '@mui/material/styles'
+import { useTheme, styled } from '@mui/material'
 import { Box, Typography, Tooltip } from '@mui/material'
 import { tooltipClasses } from '@mui/material/Tooltip'
 import { flowContext } from '@/store/context/ReactFlowContext'

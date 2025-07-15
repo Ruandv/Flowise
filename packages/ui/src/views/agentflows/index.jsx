@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 
 // material-ui
 import { Chip, Box, Skeleton, Stack, ToggleButton, ToggleButtonGroup } from '@mui/material'
-import { useTheme } from '@mui/material/styles'
+import { useTheme } from '@mui/material'
 
 // project imports
 import MainCard from '@/ui-component/cards/MainCard'
@@ -31,8 +30,8 @@ import { IconPlus, IconLayoutGrid, IconList } from '@tabler/icons-react'
 
 // ==============================|| AGENTS ||============================== //
 
-const Agentflows = () => {
-    const navigate = useNavigate()
+const Agentflows = ({ navigateTo }) => {
+    const navigate = navigateTo
     const theme = useTheme()
 
     const [isLoading, setLoading] = useState(true)
@@ -71,6 +70,7 @@ const Agentflows = () => {
     }
 
     const addNew = () => {
+        debugger
         if (agentflowVersion === 'v2') {
             navigate('/v2/agentcanvas')
         } else {

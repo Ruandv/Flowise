@@ -6,7 +6,7 @@ import axios from 'axios'
 // Material
 import Autocomplete, { autocompleteClasses } from '@mui/material/Autocomplete'
 import { Popper, CircularProgress, TextField, Box, Typography, Tooltip } from '@mui/material'
-import { useTheme, styled } from '@mui/material/styles'
+import { useTheme, styled } from '@mui/material'
 
 // API
 import credentialsApi from '@/api/credentials'

@@ -14,7 +14,7 @@ import {
     DialogActions
 } from '@mui/material'
 import { IconX, IconCheck, IconCreditCard, IconExternalLink, IconAlertCircle } from '@tabler/icons-react'
-import { useTheme, alpha } from '@mui/material/styles'
+import { useTheme, alpha } from '@mui/material'
 import accountApi from '@/api/account.api'
 import pricingApi from '@/api/pricing'
 import workspaceApi from '@/api/workspace'

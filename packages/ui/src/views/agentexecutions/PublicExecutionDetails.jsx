@@ -12,7 +12,7 @@ import useApi from '@/hooks/useApi'
 // MUI
 import { Box, Card, Stack, Typography, useTheme } from '@mui/material'
 import { IconCircleXFilled } from '@tabler/icons-react'
-import { alpha } from '@mui/material/styles'
+import { alpha } from '@mui/material'
 
 // ==============================|| PublicExecutionDetails ||============================== //
 
