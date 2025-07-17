@@ -197,7 +197,7 @@ export class App {
         const URL_CASE_INSENSITIVE_REGEX: RegExp = /\/api\/v1\//i
         const URL_CASE_SENSITIVE_REGEX: RegExp = /\/api\/v1\//
 
-        // await initializeJwtCookieMiddleware(this.app, this.identityManager)
+        await initializeJwtCookieMiddleware(this.app, this.identityManager)
 
         this.app.use(async (req, res, next) => {
             // Step 1: Check if the req path contains /api/v1 regardless of case
