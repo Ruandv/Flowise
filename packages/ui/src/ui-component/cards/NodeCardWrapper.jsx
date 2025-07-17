@@ -1,5 +1,5 @@
 // material-ui
-import { styled } from '@mui/material'
+import { styled } from '@mui/material/styles'
 
 // project imports
 import MainCard from './MainCard'

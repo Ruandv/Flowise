@@ -1,4 +1,4 @@
-import { styled } from '@mui/material'
+import { styled } from '@mui/material/styles'
 import { Fab } from '@mui/material'
 
 export const StyledFab = styled(Fab)(({ theme, color = 'primary' }) => ({

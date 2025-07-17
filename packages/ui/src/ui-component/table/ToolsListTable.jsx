@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import { useSelector } from 'react-redux'
-import { styled } from '@mui/material'
+import { styled } from '@mui/material/styles'
 import { tableCellClasses } from '@mui/material/TableCell'
 import {
     Button,

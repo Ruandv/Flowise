@@ -1,4 +1,4 @@
-import { styled } from '@mui/material'
+import { styled } from '@mui/material/styles'
 import { TableCell, TableRow } from '@mui/material'
 import { tableCellClasses } from '@mui/material/TableCell'
 
