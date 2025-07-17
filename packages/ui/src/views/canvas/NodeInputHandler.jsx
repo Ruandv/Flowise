@@ -6,7 +6,7 @@ import { cloneDeep } from 'lodash'
 import showdown from 'showdown'
 
 // material-ui
-import { useTheme, styled } from '@mui/material'
+import { useTheme, styled } from '@mui/material/styles'
 import {
     Popper,
     Box,

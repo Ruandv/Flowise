@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import PropTypes from 'prop-types'
 
 import { Typography, Box, ClickAwayListener, Paper, Popper, Button } from '@mui/material'
-import { useTheme, alpha, lighten, darken } from '@mui/material'
+import { useTheme, alpha, lighten, darken } from '@mui/material/styles'
 import { IconCheckbox, IconMessage, IconX, IconExclamationCircle, IconChecklist } from '@tabler/icons-react'
 
 // project import

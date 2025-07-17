@@ -22,7 +22,7 @@ import {
     TextField,
     Typography
 } from '@mui/material'
-import { darken, useTheme } from '@mui/material'
+import { darken, useTheme } from '@mui/material/styles'
 
 // project imports
 import ErrorBoundary from '@/ErrorBoundary'

@@ -19,7 +19,7 @@ import {
     MenuItem,
     DialogActions
 } from '@mui/material'
-import { alpha, styled } from '@mui/material'
+import { alpha, styled } from '@mui/material/styles'
 
 // api
 import userApi from '@/api/user'

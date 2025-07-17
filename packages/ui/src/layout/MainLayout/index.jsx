@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Routes, Route } from 'react-router-dom'
 
 // material-ui
-import { styled, useTheme } from '@mui/material'
+import { styled, useTheme } from '@mui/material/styles'
 import { AppBar, Box, CssBaseline, Toolbar, useMediaQuery } from '@mui/material'
 
 // project imports

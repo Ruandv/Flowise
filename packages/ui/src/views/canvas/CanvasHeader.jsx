@@ -3,7 +3,8 @@ import { useSelector, useDispatch } from 'react-redux'
 import { useEffect, useRef, useState } from 'react'
 
 // material-ui
-import { useTheme, Avatar, Box, ButtonBase, Typography, Stack, TextField, Button } from '@mui/material'
+import { useTheme } from '@mui/material/styles'
+import { Avatar, Box, ButtonBase, Typography, Stack, TextField, Button } from '@mui/material'
 
 // icons
 import { IconSettings, IconChevronLeft, IconDeviceFloppy, IconPencil, IconCheck, IconX, IconCode } from '@tabler/icons-react'

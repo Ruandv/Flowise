@@ -3,7 +3,7 @@ import { useContext, useState, memo } from 'react'
 import { useSelector } from 'react-redux'
 
 // material-ui
-import { useTheme, darken, lighten } from '@mui/material'
+import { useTheme, darken, lighten } from '@mui/material/styles'
 
 // project imports
 import NodeCardWrapper from '@/ui-component/cards/NodeCardWrapper'

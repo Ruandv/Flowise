@@ -18,7 +18,7 @@ import {
     Select
 } from '@mui/material'
 import { Check } from '@mui/icons-material'
-import { alpha, styled, emphasize } from '@mui/material'
+import { alpha, styled, emphasize } from '@mui/material/styles'
 
 import { IconChevronDown } from '@tabler/icons-react'
 

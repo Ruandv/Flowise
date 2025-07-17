@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux'
 import { Background, Handle, Position, useUpdateNodeInternals, NodeToolbar, NodeResizer } from 'reactflow'
 
 // material-ui
-import { styled, useTheme, alpha, darken, lighten } from '@mui/material'
+import { styled, useTheme, alpha, darken, lighten } from '@mui/material/styles'
 import { ButtonGroup, Avatar, Box, Typography, IconButton, Tooltip } from '@mui/material'
 
 // project imports

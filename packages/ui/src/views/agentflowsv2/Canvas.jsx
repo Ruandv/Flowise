@@ -643,9 +643,21 @@ const AgentflowCanvas = ({ navigateTo, locationTo }) => {
 
             if (startNodeData) {
                 const clonedStartNodeData = cloneDeep(startNodeData)
-                // ... rest of the code
+                clonedStartNodeData.position = { x: 100, y: 100 }
+                const startNode = {
+                    id: 'startAgentflow_0',
+                    type: 'agentFlow',
+                    position: { x: 100, y: 100 },
+                    data: {
+                        ...initNode(clonedStartNodeData, 'startAgentflow_0', true),
+                        label: 'Start'
+                    }
+                }
+                setNodes([startNode])
+                setEdges([])
             }
         }
+
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [getNodesApi.data, chatflowId])
 

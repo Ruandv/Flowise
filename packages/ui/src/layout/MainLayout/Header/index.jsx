@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 
 // material-ui
 import { Button, Avatar, Box, ButtonBase, Switch, Typography, Link } from '@mui/material'
-import { useTheme, styled, darken } from '@mui/material'
+import { useTheme, styled, darken } from '@mui/material/styles'
 
 // project imports
 import LogoSection from '../LogoSection'

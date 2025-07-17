@@ -15,7 +15,7 @@ import {
     DialogContent,
     DialogActions
 } from '@mui/material'
-import { styled, alpha } from '@mui/material'
+import { styled, alpha } from '@mui/material/styles'
 import { useTreeItem2 } from '@mui/x-tree-view/useTreeItem2'
 import {
     TreeItem2Content,

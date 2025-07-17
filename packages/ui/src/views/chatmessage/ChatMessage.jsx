@@ -25,7 +25,7 @@ import {
     DialogActions,
     TextField
 } from '@mui/material'
-import { darken, useTheme } from '@mui/material'
+import { darken, useTheme } from '@mui/material/styles'
 import {
     IconCircleDot,
     IconDownload,

@@ -22,7 +22,7 @@ import {
     Card,
     CardMedia
 } from '@mui/material'
-import { useTheme, darken } from '@mui/material'
+import { useTheme, darken } from '@mui/material/styles'
 import { useSnackbar } from 'notistack'
 import { IconCoins, IconClock, IconChevronDown } from '@tabler/icons-react'
 import toolSVG from '@/assets/images/tool.svg'
