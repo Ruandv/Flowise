@@ -1,5 +1,5 @@
 import { Box, Skeleton, Typography } from '@mui/material'
-import { useTheme } from '@mui/material'
+import { useTheme } from '@mui/material/styles'
 import PropTypes from 'prop-types'
 import { StyledButton } from '@/ui-component/button/StyledButton'
 

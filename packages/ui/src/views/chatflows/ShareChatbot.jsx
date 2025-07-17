@@ -5,7 +5,7 @@ import { SketchPicker } from 'react-color'
 import PropTypes from 'prop-types'
 
 import { Card, Box, Typography, Button, Switch, OutlinedInput, Popover, Stack, IconButton } from '@mui/material'
-import { useTheme } from '@mui/material'
+import { useTheme } from '@mui/material/styles'
 
 // Project import
 import { TooltipWithParser } from '@/ui-component/tooltip/TooltipWithParser'

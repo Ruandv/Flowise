@@ -15,7 +15,7 @@ import { omit, cloneDeep } from 'lodash'
 
 // material-ui
 import { Toolbar, Box, AppBar, Button, Fab } from '@mui/material'
-import { useTheme } from '@mui/material'
+import { useTheme } from '@mui/material/styles'
 
 // project imports
 import CanvasNode from './CanvasNode'

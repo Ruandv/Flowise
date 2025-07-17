@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 
 // material-ui
 import { Chip, Skeleton, Box, Stack, TableContainer, Paper, Table, TableHead, TableRow, TableCell, TableBody, Button } from '@mui/material'
-import { useTheme } from '@mui/material'
+import { useTheme } from '@mui/material/styles'
 
 // project imports
 import { closeSnackbar as closeSnackbarAction, enqueueSnackbar as enqueueSnackbarAction } from '@/store/actions'

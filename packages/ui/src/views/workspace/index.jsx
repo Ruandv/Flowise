@@ -25,7 +25,7 @@ import {
     DialogContent,
     CircularProgress
 } from '@mui/material'
-import { useTheme } from '@mui/material'
+import { useTheme } from '@mui/material/styles'
 
 // project imports
 import ErrorBoundary from '@/ErrorBoundary'

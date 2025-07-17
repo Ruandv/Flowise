@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import PropTypes from 'prop-types'
 
 // material-ui
-import { useTheme } from '@mui/material'
+import { useTheme } from '@mui/material/styles'
 import {
     Accordion,
     AccordionSummary,

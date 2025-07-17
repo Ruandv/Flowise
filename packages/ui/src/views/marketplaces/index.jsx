@@ -22,7 +22,7 @@ import {
     Button,
     Tabs
 } from '@mui/material'
-import { useTheme } from '@mui/material'
+import { useTheme } from '@mui/material/styles'
 import { IconLayoutGrid, IconList, IconX } from '@tabler/icons-react'
 
 // project imports

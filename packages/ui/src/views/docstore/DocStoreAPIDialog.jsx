@@ -6,7 +6,7 @@ import { Typography, Stack, Card, Accordion, AccordionSummary, AccordionDetails,
 import { TableViewOnly } from '@/ui-component/table/Table'
 import documentstoreApi from '@/api/documentstore'
 import useApi from '@/hooks/useApi'
-import { useTheme } from '@mui/material'
+import { useTheme } from '@mui/material/styles'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import { baseURL } from '@/store/constant'
 

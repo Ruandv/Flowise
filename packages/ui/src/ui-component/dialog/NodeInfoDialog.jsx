@@ -7,7 +7,7 @@ import PropTypes from 'prop-types'
 import { Button, Dialog, DialogContent, DialogTitle } from '@mui/material'
 import { TableViewOnly } from '@/ui-component/table/Table'
 import { IconBook2 } from '@tabler/icons-react'
-import { useTheme } from '@mui/material'
+import { useTheme } from '@mui/material/styles'
 
 // Store
 import { HIDE_CANVAS_DIALOG, SHOW_CANVAS_DIALOG } from '@/store/actions'

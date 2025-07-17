@@ -4,7 +4,7 @@ import { cloneDeep } from 'lodash'
 
 // Material
 import { Accordion, AccordionSummary, AccordionDetails, Box, Typography } from '@mui/material'
-import { useTheme } from '@mui/material'
+import { useTheme } from '@mui/material/styles'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import { IconSettings } from '@tabler/icons-react'
 

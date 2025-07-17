@@ -1,4 +1,4 @@
-import { useTheme } from '@mui/material'
+import { useTheme } from '@mui/material/styles'
 import { Box, Typography } from '@mui/material'
 import { gridSpacing } from '@/store/constant'
 import PropTypes from 'prop-types'

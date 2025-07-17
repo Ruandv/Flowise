@@ -1,7 +1,7 @@
 import { List, ListItem, ListItemButton, Paper, Typography, Divider } from '@mui/material'
 import { forwardRef, useEffect, useImperativeHandle, useState } from 'react'
 import { useSelector } from 'react-redux'
-import { useTheme } from '@mui/material'
+import { useTheme } from '@mui/material/styles'
 import PropTypes from 'prop-types'
 
 const SuggestionList = forwardRef((props, ref) => {

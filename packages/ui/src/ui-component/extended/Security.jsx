@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import { Divider, Stack } from '@mui/material'
-import { useTheme } from '@mui/material'
+import { useTheme } from '@mui/material/styles'
 
 // Project import
 import RateLimit from '@/ui-component/extended/RateLimit'

@@ -8,7 +8,7 @@ import { useSelector } from 'react-redux'
 
 // material-ui
 import { Toolbar, Box, AppBar } from '@mui/material'
-import { useTheme } from '@mui/material'
+import { useTheme } from '@mui/material/styles'
 
 // project imports
 import MarketplaceCanvasNode from './MarketplaceCanvasNode'

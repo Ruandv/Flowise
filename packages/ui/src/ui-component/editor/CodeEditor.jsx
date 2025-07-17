@@ -5,7 +5,7 @@ import { json } from '@codemirror/lang-json'
 import { vscodeDark } from '@uiw/codemirror-theme-vscode'
 import { sublime } from '@uiw/codemirror-theme-sublime'
 import { EditorView } from '@codemirror/view'
-import { useTheme } from '@mui/material'
+import { useTheme } from '@mui/material/styles'
 
 export const CodeEditor = ({
     value,

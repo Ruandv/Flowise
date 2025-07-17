@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import { useNavigate } from 'react-router-dom'
 
 // material-ui
-import { useTheme } from '@mui/material'
+import { useTheme } from '@mui/material/styles'
 import { Avatar, Box, ButtonBase, Typography, Stack } from '@mui/material'
 import { StyledButton } from '@/ui-component/button/StyledButton'
 

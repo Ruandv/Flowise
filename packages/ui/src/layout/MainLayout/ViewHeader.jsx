@@ -3,7 +3,7 @@ import { useRef } from 'react'
 
 // material-ui
 import { IconButton, Box, OutlinedInput, Toolbar, Typography } from '@mui/material'
-import { useTheme } from '@mui/material'
+import { useTheme } from '@mui/material/styles'
 import { StyledFab } from '@/ui-component/button/StyledFab'
 
 // icons

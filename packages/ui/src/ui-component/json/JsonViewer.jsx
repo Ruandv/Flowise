@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux'
 import { Box } from '@mui/material'
-import { useTheme } from '@mui/material'
+import { useTheme } from '@mui/material/styles'
 import PropTypes from 'prop-types'
 
 // Syntax highlighting function for JSON

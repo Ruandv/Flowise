@@ -37,7 +37,7 @@ import {
 } from '@tabler/icons-react'
 
 // Project imports
-import { useTheme } from '@mui/material'
+import { useTheme } from '@mui/material/styles'
 import { FLOWISE_CREDENTIAL_ID, AGENTFLOW_ICONS } from '@/store/constant'
 import { NodeExecutionDetails } from '@/views/agentexecutions/NodeExecutionDetails'
 import ShareExecutionDialog from './ShareExecutionDialog'
